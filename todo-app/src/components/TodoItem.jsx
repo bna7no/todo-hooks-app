@@ -1,8 +1,11 @@
-function TodoItem({ title }) {
-
+function TodoItem({ task, onDelete }) {
     return (
         <div className="todo-item">
-            <p>{title}</p>
+            <p>{task.title}</p>
+
+            <button onClick={() => onDelete(task.id)}>
+                Delete
+            </button>
         </div>
     );
 }

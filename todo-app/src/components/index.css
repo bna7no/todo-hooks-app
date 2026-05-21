@@ -16,9 +16,29 @@ h1 {
     text-align: center;
 }
 
+.form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
 .todo-item {
     background-color: #e3e3e3;
     padding: 15px;
     margin-top: 10px;
     border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

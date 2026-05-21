@@ -1,13 +1,13 @@
 import TodoItem from "./TodoItem";
 
-function TodoList({ tasks }) {
-
+function TodoList({ tasks, onDelete }) {
     return (
         <div>
             {tasks.map(task => (
                 <TodoItem
                     key={task.id}
-                    title={task.title}
+                    task={task}
+                    onDelete={onDelete}
                 />
             ))}
         </div>
